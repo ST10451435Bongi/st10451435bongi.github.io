@@ -73,6 +73,25 @@ li{margin-bottom:8px;font-size:15.5px}
 </ul>
 
 <h2>WORK EXPERIENCE</h2>
+  
+<p><strong>GWR Event Marshal / Steward - 6 Braai Stands (36 Participants) | Big Save World's Biggest Braai - Guinness World Record Attempt</strong></p>
+<p><strong>Location:</strong> Loftus Versfeld D-Field, Pretoria | <strong>Date:</strong> 24 September 2026</p>
+<p><strong>Duties:</strong> Official independent observer selected as one of 82 marshals for GWR record attempt - Most people braaing simultaneously (3000 pax). Managed 6 braai stations / 36 participants...</p>
+
+<div class="wors-calc">
+<h3>🔥 Wors Calculator - Built by Bongi (1 wors = 1 person)</h3>
+<label>Number of People: <input type="number" id="people" value="36" min="1" max="3000"></label>
+<button onclick="calcWors()">Calculate</button>
+<div id="worsResult" class="wors-result">For your 6 stands (36 participants): 36 wors pieces needed.</div>
+<script>
+function calcWors(){
+  let p = parseInt(document.getElementById('people').value) || 0;
+  let wors = p;
+  let braais = Math.ceil(p / 6);
+  document.getElementById('worsResult').innerHTML = 'For ' + p + ' people: ' + wors + ' wors pieces. Braais needed: ' + braais;
+}
+</script>
+</div>
 <p><strong>Waitress | Four Four Two Sports and Lounge | August 2025 - July 2026</strong></p>
 <p><strong>Duties:</strong> Customer service, taking orders, serving food & beverages, cash handling, maintaining cleanliness, teamwork, ensuring customer satisfaction</p>
 <p><strong>Skills Gained:</strong> Communication, customer relations, time management, teamwork, working under pressure, attention to detail, cash handling</p>
